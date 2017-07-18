@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home | unsuitable001</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <!-- <input type="text" id="uname" placeholder="username"><br>
+        <input type="password" id="pwd" placeholder="password"><br>
+        <button onclick="login()">Login</button> -->
+    
+            <div class="ui one column stackable center aligned page grid child">
+                <div class="ui basic segment">
+                    <h2 class="ui blue header">This Site will launch in</h2>
+                    <h1 class="ui teal header" id="timeholder"></h1>
+                </div>
+            </div>
+    
+    <link rel= "stylesheet" type= "text/css" href= "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <style>
+        .child {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    </style>
+    <script>
+            function timer(){
+                secs--;
+                if(secs == 0){
+                    mins--;
+                    secs = 60;
+                }
+                document.getElementById("timeholder").innerText = dys + " Days & " + hrs + ":" + mins + ":" + secs;
+            };
+            document.body.onload = function(){
+                console.log("hi");
+                let current = new Date();
+                let due = new Date("Mon Apr 01 2019 00:00:00 GMT+0530 (India Standard Time)");
+                let ms = (due - current);
+                var rem = (ms % 86400000);
+                window.dys = Math.floor(ms / 86400000);
+                window.hrs = Math.floor(rem / 3600000);
+                window.mins = Math.floor(((rem % 3600000) / 60000));
+                window.secs = 60 - current.getSeconds();
+                console.log(dys);
+                console.log(hrs);
+                console.log(mins);
+                console.log(secs);
+                setInterval ("timer()", 1000);
+            };
+    </script>
+    </body>
+</html>

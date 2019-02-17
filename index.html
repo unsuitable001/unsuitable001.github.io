@@ -27,14 +27,7 @@
         }
     </style>
     <script>
-            function timer(){
-                secs--;
-                if(secs == 0){
-                    mins--;
-                    secs = 60;
-                }
-                document.getElementById("timeholder").innerText = dys + " Days & " + hrs + ":" + mins + ":" + secs;
-            };
+            
             document.body.onload = function(){
                 console.log("hi");
                 let current = new Date();
@@ -42,15 +35,9 @@
                 let ms = (due - current);
                 var rem = (ms % 86400000);
                 window.dys = Math.floor(ms / 86400000);
-                window.hrs = Math.floor(rem / 3600000);
-                window.mins = Math.floor(((rem % 3600000) / 60000));
-                window.secs = 60 - current.getSeconds();
-                console.log(dys);
-                console.log(hrs);
-                console.log(mins);
-                console.log(secs);
-                setInterval ("timer()", 1000);
-            };
+                document.getElementById("timeholder").innerText = dys + " Days";
+                };
+                
     </script>
     </body>
 </html>

@@ -7,10 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <!-- <input type="text" id="uname" placeholder="username"><br>
-        <input type="password" id="pwd" placeholder="password"><br>
-        <button onclick="login()">Login</button> -->
-    
             <div class="ui one column stackable center aligned page grid child">
                 <div class="ui basic segment">
                     <h2 class="ui blue header">This Site will launch in</h2>
@@ -29,9 +25,8 @@
     <script>
             
             document.body.onload = function(){
-                console.log("hi");
                 let current = new Date();
-                let due = new Date("Mon Apr 01 2019 00:00:00 GMT+0530 (India Standard Time)");
+                let due = new Date("Mon Apr 19 2019 00:00:00 GMT+0530 (India Standard Time)");
                 let ms = (due - current);
                 var rem = (ms % 86400000);
                 window.dys = Math.floor(ms / 86400000);

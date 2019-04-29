@@ -1,37 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8" />
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Home | unsuitable001</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" type="text/css" />
-		<link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet"> 
         <link rel="icon" type="image/x-icon" href="./media/unsuitable.svg" />
         <meta name="theme-color" content="#0D0D0D" />
     </head>
-    <style>
-        body{
-            background-color: #0D0D0D !important;
-        }
-        .inverted{
-            background-color: #0D0D0D !important;
-		}
-		.invisible{
-			opacity: 0;
-		}
-		p{
-			color: azure;
-		}
-		.button{
-			margin-bottom: 0.25em !important;
-		}
-		.namehead{
-			color: bisque !important;
-			font-family: 'Caveat Brush', cursive !important;
-			font-size: 1.5em;
-		}
-    </style>
     <body onload="fixMBMT();">
 		<!-- mobile only menu -->
 		<div class="ui sidebar inverted vertical menu">
@@ -54,7 +30,7 @@
 						</div>
 						<div class="ui top fixed secondary pointing inverted menu">
 							<div class="left item">
-								<a href="/index.html" class="item namehead">unsuitable001</a>
+								<a href="/index.html" class="item namehead" style="font-size: 1.5em;">unsuitable001</a>
 							</div>
 							<div class="right item">
 								<a href="/index.html" class="active item">Home</a>
@@ -73,7 +49,7 @@
 						</div>
 						<div class="ui top fixed secondary pointing inverted menu">
 							<a class="item" onclick="toggleMenu();"><i class="bars icon"></i></a>
-							<a href="/index.html" class="right item namehead">unsuitable001</a>
+							<a href="/index.html" class="right item namehead" style="font-size: 1.5em;">unsuitable001</a>
 						</div>
 					</div>
 				</div>
@@ -84,12 +60,28 @@
 				<div class="ui two column stackable center aligned grid">
 					<div class="middle aligned row">
 						<div id="avatar" class="column">
-							<img class="ui large image" src="./media/unsuitable.svg">
+							<img class="ui large image" src="./media/unsuitable.svg" alt="unsuitable001 avatar">
 						</div>
 						<div class="column">
-							<h1 class="namehead" style="font-size: 3.5em;">unsuitable001</h1>
+							<h1 class="namehead" style="font-size: 3.5em;font-size:10vh;">unsuitable001</h1>
 							<p class="namehead">In a voyage of LIFE</p>
 						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ui center aligned inverted segment">
+				<h1 class="namehead">WHAT'S NEW</h1>
+				<div class="ui move right reveal">
+					<div class="visible content">
+						<a href="google.com">
+							<svg width="150" height="150" class="ui round medium image"></svg>
+							<p class="blogSummary">Dummy Hot News Area</p>
+						</a>
+					</div>
+					<div class="hidden content">
+						<a href="google.com">
+							<img src="./media/unsuitable.svg" class="ui round medium image">
+						</a>
 					</div>
 				</div>
 			</div>
@@ -121,7 +113,10 @@
 				</div>
 			</div>
 		</div>
-		<script language="javascript" src="http://code.jquery.com/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+		<link rel="stylesheet" href="./css/main.css" type="text/css" />
+		<script language="javascript" src="https://code.jquery.com/jquery.min.js"></script>
 		<script language="javascript" src="./js/semantic.min.js"></script>
 		<script defer language="javascript" src="./js/main.js"></script>
 		<script defer language="javascript" src="./js/home.js"></script>

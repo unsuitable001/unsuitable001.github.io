@@ -1,0 +1,34 @@
+body{
+    background-color: #0D0D0D !important;
+}
+.inverted{
+    background-color: #0D0D0D !important;
+}
+.invisible{
+    opacity: 0;
+}
+p{
+    color: azure;
+}
+.button{
+    margin-bottom: 0.25em !important;
+}
+.namehead{
+    color: bisque !important;
+    font-family: 'Caveat Brush', cursive !important;
+    font-size: 2em;
+    font-size: 6vh;
+}
+.blogSummary{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.9);
+
+    @supports (backdrop-filter: blur(40px)) or (-webkit-backdrop-filter: blur(40px)) {
+    -webkit-backdrop-filter: blur(40px) saturate(125%);
+    backdrop-filter: blur(40px) saturate(125%);
+    background-color: rgba(0, 0, 0, .5);
+    }
+}

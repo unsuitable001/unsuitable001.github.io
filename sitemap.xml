@@ -2,14 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
       <loc>https://unsuitable001.github.io/</loc>
-      <lastmod>2019-04-29</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.9</priority>
    </url>
-    <url>
+   <url>
       <loc>https://unsuitable001.github.io/blog/</loc>
-      <lastmod>2019-04-29</lastmod>
-      <changefreq>daily</changefreq>
-      <priority>0.9</priority>
    </url>
 </urlset> 

@@ -17,7 +17,7 @@ p{
     color: bisque !important;
     font-family: 'Caveat Brush', cursive !important;
     font-size: 2em;
-    font-size: 4vw;
+    font-size: 4vmax;
 }
 .transparent{
     background: rgba(13, 13, 13, 0.863) !important;
@@ -27,9 +27,6 @@ p{
 }
 
 .pusher{
-    /* width: 100%;
-    height: 100%; */
-    /* z-index: -5; */
     background: url('../media/unsuitable.svg') no-repeat center center fixed !important;
     -webkit-background-size: cover !important;
     -moz-background-size: cover !important;
@@ -50,6 +47,16 @@ p{
     transform-origin: top left;
 }
 
+.unrotate{
+	-webkit-transition: transform 1.3s ease-in-out;
+	-moz-transition: transform 1.3s ease-in-out;
+	-o-transition: transform 1.3s ease-in-out;
+    -ms-transition: transform 1.3s ease-in-out;
+    transition: transform 1.3s ease-in-out;
+    transform: rotate(0deg);
+    transform-origin: top left;
+}
+
 .mMenu{
     height: 100%;
     width: 100%;
@@ -67,4 +74,25 @@ p{
     transition: transform 1.3s ease-in-out;
     transform: rotate(0deg);
     transform-origin: top left;
+}
+
+.mHide{
+    -webkit-transition: transform 1.3s ease-in-out;
+	-moz-transition: transform 1.3s ease-in-out;
+	-o-transition: transform 1.3s ease-in-out;
+    -ms-transition: transform 1.3s ease-in-out;
+    transition: transform 1.3s ease-in-out;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+}
+
+.mCenter {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.mcol{
+    background: rgba(255, 255, 255, 0) !important;
 }

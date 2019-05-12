@@ -15,8 +15,79 @@
         <meta name="theme-color" content="#0D0D0D" />
     </head>
     <body class="">
-		<div class="ui red inverted segment mMenu" id="hiddenmenu">
-			dydyfysdfuysdfgyufdyugfsdyu
+		<div class="ui segment mMenu" id="hiddenmenu">
+			<div class="ui stackable center aligned grid mCenter">
+				<div class="ui row">
+					<a class="negative ui huge button" onclick="closeMenu();"><i class="close icon"></i> Close Menu</a>
+				</div>
+				<div class="row"></div>
+				<div class="ui row">
+					<div class="column">
+						<div class="ui animated white huge button" id="home">
+							<div class="visible content"> Home </div>
+							<div class="hidden content">
+								<i class="right arrow icon"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ui row">
+				<div class="column">
+					<div class="ui animated white huge button mcol" id="projects">
+						<div class="visible content"> Projects </div>
+						<div class="hidden content">
+							<i class="right arrow icon"></i>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="ui row">
+				<div class="column">
+					<div class="ui animated white huge button mcol" id="blog">
+						<div class="visible content"> Blog </div>
+						<div class="hidden content">
+							<i class="right arrow icon"></i>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="ui row">
+				<div class="column">
+					<div class="ui animated white huge button mcol" id="about">
+						<div class="visible content"> About Me </div>
+						<div class="hidden content">
+							<i class="right arrow icon"></i>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="ui row">
+					<div class="column">
+						<div class="ui animated white huge button mcol" id="contact">
+							<div class="visible content"> Contact </div>
+							<div class="hidden content">
+								<i class="right arrow icon"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="column">
+						<a href="https://twitter.com/unsuitable001" class="ui blue button">
+							<i class="twitter icon"></i>
+						</a>
+						<a href="https://github.com/unsuitable001" class="ui black button">
+							<i class="github icon"></i>
+						</a>
+						<a href="https://gitter.im/unsuitable001" class="ui pink button">
+							<i class="gitter icon"></i>
+						</a>
+						<a href="https://unsuitable001.github.io/sitemap.html" class="ui button">
+							<i class="sitemap icon"></i>
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="pusher" id="maindiv">
 			<div class="bgoverlay">
@@ -49,12 +120,12 @@
 						<img class="ui large image" src="./media/unsuitable.svg" alt="unsuitable001 avatar">
 					</div> -->
 					<div class="column">
-						<h1 class="namehead" style="font-size: 3.5em;font-size:8vw;">unsuitable001</h1>
+						<h1 class="namehead" style="font-size: 3.5em;font-size:8vmax;">unsuitable001</h1>
 					</div>
 				</div>
 				<div class="row">
 					<div class="column">
-						<p class="namehead"><span>In a voyage of LIFE</span></p>
+						<p class="namehead">In a voyage of <span id="itext">LIFE</span></p>
 					</div>
 				</div>
 			</div>

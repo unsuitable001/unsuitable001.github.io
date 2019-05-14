@@ -5,10 +5,14 @@ var hiddenmenu;
 document.body.onload = function (){
     scrH = document.body.clientHeight;
     scrW = document.body.clientWidth;
-    let x = document.getElementById('intro').style;
-    x.height = scrH - document.getElementById('menu').offsetHeight + 'px';
     maindiv = document.getElementById('maindiv');
     hiddenmenu = document.getElementById('hiddenmenu');
+    try{
+        mainentry();
+    }
+    catch(ReferenceError){
+        console.log("Homepage : https://unsuitable001.github.io");
+    }
 }
 
 function openMenu(){
@@ -25,4 +29,11 @@ function closeMenu(){
     document.body.classList.remove("noscroll");
     maindiv.classList.remove("rotate");
     hiddenmenu.classList.remove("mReveal");
+    maindiv.addEventListener("transitionend", postClose);
+}
+
+function postClose(){
+    maindiv.classList.remove("unrotate");
+    hiddenmenu.classList.remove("mHide");
+    maindiv.removeEventListener("transitionend", postClose);
 }

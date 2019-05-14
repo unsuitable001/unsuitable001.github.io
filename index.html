@@ -14,66 +14,127 @@
         <link rel="icon" type="image/x-icon" href="./media/unsuitable.svg" />
         <meta name="theme-color" content="#0D0D0D" />
     </head>
-    <body onload="fixMBMT();">
-		<!-- mobile only menu -->
-		<div class="ui sidebar inverted vertical menu">
-			<a href="/index.html" class="active item">Home</a>
-			<a class="item">Projects</a>
-			<a href="/blog/index.html"  class="item">Blog</a>
-			<a class="item">About Me</a>
-			<a class="item">Contact</a>
+    <body class="">
+		<div class="ui segment mMenu" id="hiddenmenu">
+							<div class="ui top secondary red pointing menu">
+					<div class="right item">
+						<a class="negative ui button" onclick="closeMenu();"><i class="close icon"></i> Close Menu</a>
+					</div>
+				</div>
+			<div class="ui stackable center aligned grid mCenter">
+				<div class="ui row">
+					<div class="column">
+						<a href="https://unsuitable001.github.io">
+						<div class="ui animated white big button" id="home">
+							<div class="visible content"> Home </div>
+							<div class="hidden content">
+								<i class="right arrow icon"></i>
+							</div>
+						</div>
+						</a>
+					</div>
+				</div>
+				<div class="ui row">
+				<div class="column">
+					<a href="https://unsuitable001.github.io/project">
+					<div class="ui animated white big button mcol" id="projects">
+						<div class="visible content"> Projects </div>
+						<div class="hidden content">
+							<i class="right arrow icon"></i>
+						</div>
+					</div>
+					</a>
+				</div>
+				</div>
+				<div class="ui row">
+				<div class="column">
+					<a href="https://unsuitable001.github.io/blog">
+					<div class="ui animated white big button mcol" id="blog">
+						<div class="visible content"> Blog </div>
+						<div class="hidden content">
+							<i class="right arrow icon"></i>
+						</div>
+					</div>
+					</a>
+				</div>
+				</div>
+				<div class="ui row">
+				<div class="column">
+					<a href="https://unsuitable001.github.io/about">
+					<div class="ui animated white big button mcol" id="about">
+						<div class="visible content"> About Me </div>
+						<div class="hidden content">
+							<i class="right arrow icon"></i>
+						</div>
+					</div>
+					</a>
+				</div>
+				</div>
+				<div class="ui row">
+					<div class="column">
+						<a href="https://unsuitable001.github.io/contact">
+						<div class="ui animated white big button mcol" id="contact">
+							<div class="visible content"> Contact </div>
+							<div class="hidden content">
+								<i class="right arrow icon"></i>
+							</div>
+						</div>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="column">
+						<a href="https://twitter.com/unsuitable001" class="ui compact circular twitter button" alt="twitter"> 
+							<i class="twitter icon"></i>
+						</a>
+						<a href="https://github.com/unsuitable001" class="ui compact circular github button" alt="github"> 
+							<i class="github icon"></i>
+						</a>
+						<a href="https://gitter.im/unsuitable001" class="ui compact circular pink button" alt="gitter"> 
+							<i class="gitter icon"></i>
+						</a>
+						<a href="https://unsuitable001.github.io/sitemap.html" class="ui compact circular button" alt="sitemap"> 
+							<i class="sitemap icon"></i>
+						</a>
+					</div>
+				</div>
+				<div class="row"></div>
+			</div>
 		</div>
-		<!-- mobile only menu ends -->
-		<div class="pusher" style="background-color: #0d0d0d">
-			<div id="menu" class="ui grid">
+		<div class="pusher" id="maindiv">
+			<div class="bgoverlay">
+			<div class="ui grid">
 				<!-- menu -->
-				<div class="ui computer only row">
+				<div class="ui row">
 					<div class="column">
 						<div class="ui invisible menu">
 							<div class="item">
 								<a class="item">dummy item</a>
 							</div>
 						</div>
-						<div class="ui top fixed secondary pointing inverted menu">
+						<div class="ui top fixed secondary inverted pointing transparent menu" id="menu">
 							<div class="left item">
-								<a href="/index.html" class="item namehead" style="font-size: 1.5em;">unsuitable001</a>
+									<a href="/index.html" class="item namehead" style="font-size: 1.5em;">unsuitable001</a>
 							</div>
-							<div class="right item">
-								<a href="/index.html" class="active item">Home</a>
-								<a class="item">Projects</a>
-								<a href="/blog/index.html" class="item">Blog</a>
-								<a class="item">About Me</a>
-								<a class="item">Contact</a>
+							<div class="right item" onclick="openMenu();">
+								<a class="item"><i class="large bars icon"></i></a>
 							</div>
-						</div>
-					</div>
-				</div>
-				<div class="ui mobile tablet only row">
-					<div class="column">
-						<div class="ui invisible menu">
-							<a class="item"><i class="bars icon"></i></a>
-						</div>
-						<div class="ui top fixed secondary pointing inverted menu">
-							<a class="item" onclick="toggleMenu();"><i class="bars icon"></i></a>
-							<a href="/index.html" class="right item namehead" style="font-size: 1.5em;">unsuitable001</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- menu ends -->
-			<!-- site content -->
-			<div class="ui center aligned basic container" id="intro">
-				<div class="ui two column stackable center aligned grid">
-					<div class="middle aligned row">
-						<div id="avatar" class="column">
-							<img class="ui large image" src="./media/unsuitable.svg" alt="unsuitable001 avatar">
-						</div>
-						<div class="column">
-							<h1 class="namehead" style="font-size: 3.5em;font-size:10vh;">unsuitable001</h1>
-							<p class="namehead">In a voyage of LIFE</p>
-						</div>
+			<div class="ui two row stackable center aligned grid" id="intro">
+				<div class="row">
+					<div class="column">
+						<h1 class="namehead" style="font-size: 3.5em;font-size:8vmax;">unsuitable001</h1>
 					</div>
 				</div>
+				<div class="row">
+					<div class="column">
+						<p class="namehead">In a voyage of <span id="itext">LIFE</span></p>
+					</div>
+				</div>
+			</div>
 			</div>
 			<!-- footer -->
 			<div class="ui bottom footer black inverted segment">
@@ -81,18 +142,16 @@
 					<div class="middle aligned row">
 						<div class="column">
 							<div>&copy; Soumyadip Mondal (aka. unsuitable001). All Rights Reserved. <br>
-								Thanks to semantic-ui (A MIT LICENSED CSS library)
 							</div>
 						</div>
 						<div class="column">
-							<a href="https://twitter.com/unsuitable001" class="ui twitter button">
-								<i class="twitter icon"></i>
-								Twitter
+							<a href="https://twitter.com/unsuitable001" class="ui inverted blue button">
+								<i class="twitter icon"></i> Twitter
 							</a>
 							<a href="https://github.com/unsuitable001" class="ui black inverted button">
 								<i class="github icon"></i> Github
 							</a>
-							<a href="https://gitter.im/unsuitable001" class="ui pink button">
+							<a href="https://gitter.im/unsuitable001" class="ui inverted pink button">
 								<i class="gitter icon"></i> Gitter
 							</a>
 							<a href="https://unsuitable001.github.io/sitemap.html" class="ui basic black inverted button">
@@ -103,12 +162,10 @@
 				</div>
 			</div>
 		</div>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" type="text/css" />
-		<link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+		<link rel="stylesheet" href="./css/semantic.min.css" type="text/css" />
+		<link defer href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
 		<link rel="stylesheet" href="./css/main.css" type="text/css" />
-		<script language="javascript" src="https://code.jquery.com/jquery.min.js"></script>
-		<script language="javascript" src="./js/semantic.min.js"></script>
-		<script defer language="javascript" src="./js/main.js"></script>
-		<script defer language="javascript" src="./js/home.js"></script>
+		<script language="javascript" src="./js/main.js"></script>
+		<script language="javascript" src="./js/home.js"></script>
     </body>
 </html>

@@ -17,18 +17,82 @@ p{
     color: bisque !important;
     font-family: 'Caveat Brush', cursive !important;
     font-size: 2em;
-    font-size: 6vh;
+    font-size: 4vmax;
 }
-.blogSummary{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.9);
+.transparent{
+    background: rgba(13, 13, 13, 0.863) !important;
+}
+.noscroll{
+    overflow: hidden;
+}
 
-    @supports (backdrop-filter: blur(40px)) or (-webkit-backdrop-filter: blur(40px)) {
-    -webkit-backdrop-filter: blur(40px) saturate(125%);
-    backdrop-filter: blur(40px) saturate(125%);
-    background-color: rgba(0, 0, 0, .5);
-    }
+.pusher{
+    background: url('../media/unsuitable.svg') no-repeat center center fixed !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    background-size: auto !important;
+}
+.bgoverlay{
+    background: rgba(13, 13, 13, 0.863) !important;
+}
+.rotate{
+	-webkit-transition: transform 1.3s ease-in-out;
+	-moz-transition: transform 1.3s ease-in-out;
+	-o-transition: transform 1.3s ease-in-out;
+    -ms-transition: transform 1.3s ease-in-out;
+    transition: transform 1.3s ease-in-out;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+.unrotate{
+	-webkit-transition: transform 1.3s ease-in-out;
+	-moz-transition: transform 1.3s ease-in-out;
+	-o-transition: transform 1.3s ease-in-out;
+    -ms-transition: transform 1.3s ease-in-out;
+    transition: transform 1.3s ease-in-out;
+    transform: rotate(0deg);
+    transform-origin: top left;
+}
+
+.mMenu{
+    height: 100%;
+    width: 100%;
+    position: absolute !important;
+    top: 0% !important;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+}
+
+.mReveal{
+    -webkit-transition: transform 1.3s ease-in-out;
+	-moz-transition: transform 1.3s ease-in-out;
+	-o-transition: transform 1.3s ease-in-out;
+    -ms-transition: transform 1.3s ease-in-out;
+    transition: transform 1.3s ease-in-out;
+    transform: rotate(0deg);
+    transform-origin: top left;
+}
+
+.mHide{
+    -webkit-transition: transform 1.3s ease-in-out;
+	-moz-transition: transform 1.3s ease-in-out;
+	-o-transition: transform 1.3s ease-in-out;
+    -ms-transition: transform 1.3s ease-in-out;
+    transition: transform 1.3s ease-in-out;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+}
+
+.mCenter {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.mcol{
+    background: rgba(255, 255, 255, 0) !important;
 }

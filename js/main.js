@@ -2,6 +2,8 @@ var scrH = 0;
 var scrW = 0;
 var maindiv;
 var hiddenmenu;
+var scrollX;
+var scrollY;
 document.body.onload = function (){
     scrH = document.body.clientHeight;
     scrW = document.body.clientWidth;
@@ -16,6 +18,9 @@ document.body.onload = function (){
 }
 
 function openMenu(){
+    scrollX = window.pageXOffset;
+    scrollY = window.pageYOffset;
+    window.scrollTo(0,0);
     maindiv.classList.add("rotate");
     hiddenmenu.classList.add("mReveal");
     document.body.classList.add("noscroll");
@@ -36,4 +41,5 @@ function postClose(){
     maindiv.classList.remove("unrotate");
     hiddenmenu.classList.remove("mHide");
     maindiv.removeEventListener("transitionend", postClose);
+    window.scrollTo(scrollX,scrollY);
 }

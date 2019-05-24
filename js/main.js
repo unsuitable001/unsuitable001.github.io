@@ -14,6 +14,10 @@ document.body.onload = function (){
     }
     catch(ReferenceError){
         console.log("Homepage : https://unsuitable001.github.io");
+        if((scrH + 1) > document.body.scrollHeight){
+            let x = document.getElementById('maindiv').style;
+            x.height = scrH - document.getElementById('menu').offsetHeight + 'px';
+        }
     }
 }
 

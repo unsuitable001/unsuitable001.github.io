@@ -14,6 +14,11 @@ var Arrayindex = 0;
 var arraylen = textArray.length;
 var _randlen = 12;
 var _timeout;
+var _isMenuOpen = false;
+
+function homeAnimToggle(){
+    _isMenuOpen = !_isMenuOpen;
+}
 
 function animResetter(){
     clearTimeout(_timeout);
@@ -23,6 +28,9 @@ function animResetter(){
 }
 
 function scribbleanim(){
+    if(_isMenuOpen){
+        return 1;
+    }
     if(animrandtime > 0){
         if(Arrayindex === arraylen){
             Arrayindex = 0;

@@ -30,6 +30,12 @@ function openMenu(){
     document.body.classList.add("noscroll");
     maindiv.classList.remove("unrotate");
     hiddenmenu.classList.remove("mHide");
+    try{
+        homeAnimToggle();
+    }
+    catch(ReferenceError){
+        console.log("Homepage : https://unsuitable001.github.io");
+    }
 }
 
 function closeMenu(){
@@ -46,4 +52,11 @@ function postClose(){
     hiddenmenu.classList.remove("mHide");
     maindiv.removeEventListener("transitionend", postClose);
     window.scrollTo(scrollX,scrollY);
+    try{
+        homeAnimToggle();
+        scribbleanim();
+    }
+    catch(ReferenceError){
+        console.log("Homepage : https://unsuitable001.github.io");
+    }
 }

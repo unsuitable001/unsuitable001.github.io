@@ -10,8 +10,14 @@ body{
 .invisible{
     opacity: 0;
 }
-p{
-    color: rgb(186, 236, 236);
+p,h1,h2{
+    color: rgb(186, 236, 236) !important;
+}
+.ui.vertical.segment p{
+    font-size: 1.5em !important;
+}
+.ui.stacked.segment{
+    font-size: 1.6em !important;
 }
 .button{
     margin-bottom: 0.25em !important;

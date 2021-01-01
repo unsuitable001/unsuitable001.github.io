@@ -41,17 +41,24 @@ module.exports = {
       },
       {
         text: 'blogs',
-        link: '/blogs/'
+        link: 'https://unsuitable001.medium.com'
+      },
+      {
+        text: 'podcasts',
+        link: 'https://www.youtube.com/channel/UCuNZt3eGVpmbuS6UB4xggoA/'
       },
       {
         text: 'resume',
-        link: '/resume/'
+        link: 'https://docs.google.com/document/d/1A4wzLlYHKrB_dgTqVzdFH2rquqC1DwvRGKy_ZsiaBsQ/edit?usp=sharing'
       },
-      {
-        text: 'about me',
-        link: '/about'
-      }
     ],
+    socials: {
+      twitter: 'https://twitter.com/unsuitable001',
+      linkedin: 'https://linkedin.com/in/unsuitable001',
+      github: 'https://github.com/unsuitable001',
+      youtube: 'https://www.youtube.com/channel/UCuNZt3eGVpmbuS6UB4xggoA/',
+      medium: 'https://unsuitable001.medium.com'
+    }
     // sidebar: {
     //   '/guide/': [
     //     {

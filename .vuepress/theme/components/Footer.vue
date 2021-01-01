@@ -1,17 +1,17 @@
 <template>
-    <div class="p-4 -mx-6 bg-gray-900 w-screen mt-auto flex items-center">
-        <span>Made by Soumyadip Mondal with ❤️</span>
-        <div class="flex items-center">
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" class="text-white rounded-full h-8 w-8" 
-            viewBox="0 0 20 20" fill="currentColor" preserveAspectRatio="xMinYMin meet">
-            <path fill-rule="evenodd" d="M1576 152q-67 98-162 167 1 14 1 42 0 130-38 259.5T1261.5 869 1077 1079.5t-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5T177 777q33 5 61 5 43 0 85-11-112-23-185.5-111.5T64 454v-4q68 38 146 41-66-44-105-115T66 222q0-88 44-163 121 149 294.5 238.5T776 397q-8-38-8-74 0-134 94.5-228.5T1091 0q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z" clip-rule="evenodd"/>
-            </svg> -->
-        </div>
+    <div class="p-4 -m-6 bg-gray-900 w-screen mt-auto flex flex-col sm:flex-row items-center justify-between">
+        <span class="mx-2 flex-none sm:flex-1">Made by Soumyadip Mondal with ❤️</span>
+        <SocialBox class="flex items-center flex-none sm:flex-1 justify-end" :s="6" :m="2"/>
     </div>
 </template>
 
 <script>
+import SocialBox from './SocialBox.vue';
+
 export default {
     name: 'Footer',
+    components: {
+        SocialBox,
+    }
 }
 </script>

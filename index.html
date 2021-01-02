@@ -1,202 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Home | unsuitable001</title>
-        <meta name="copyright" content="&copy; 2019. Soumyadip Mondal (aka. unsuitable001). All Rights Reserved.">
-        <meta name="description" content="Welcome to the home page of unsuitable001 . This is where I post blogs and my projects.">
-        <meta name="keywords" content="unsuitable001, Soumyadip, Soumyadip Mandal, Soumyadip Mondal, blog, tech blog, semantic ui, GCI 2018, unsuitable001.github.io">
-        <meta name="robots" content="index,follow">
-        <meta name="DC.title" content="Home | unsuitable001">
-		<link rel="sitemap" href="sitemap.xml" type="application/xml" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/x-icon" href="./media/unsuitable.svg" />
-        <meta name="theme-color" content="#0D0D0D" />
-    </head>
-    <body class="">
-		<div class="ui segment mMenu" id="hiddenmenu">
-			<div class="ui top secondary red pointing menu">
-				<div class="right item">
-					<a class="negative ui button" onclick="closeMenu();"><i class="close icon"></i> Close Menu</a>
-				</div>
-			</div>
-			<div class="ui stackable center aligned grid mCenter">
-				<div class="ui row">
-					<div class="column">
-						<a href="https://unsuitable001.github.io">
-						<div class="ui animated white big button" id="home">
-							<div class="visible content"> Home </div>
-							<div class="hidden content">
-								<i class="right arrow icon"></i>
-							</div>
-						</div>
-						</a>
-					</div>
-				</div>
-				<div class="ui row">
-				<div class="column">
-					<a href="https://unsuitable001.github.io/project">
-					<div class="ui animated white big button mcol" id="projects">
-						<div class="visible content"> Projects </div>
-						<div class="hidden content">
-							<i class="right arrow icon"></i>
-						</div>
-					</div>
-					</a>
-				</div>
-				</div>
-				<div class="ui row">
-				<div class="column">
-					<a href="https://unsuitable001.github.io/blog">
-					<div class="ui animated white big button mcol" id="blog">
-						<div class="visible content"> Blog </div>
-						<div class="hidden content">
-							<i class="right arrow icon"></i>
-						</div>
-					</div>
-					</a>
-				</div>
-				</div>
-				<div class="ui row">
-				<div class="column">
-					<a href="https://unsuitable001.github.io/about">
-					<div class="ui animated white big button mcol" id="about">
-						<div class="visible content"> About Me </div>
-						<div class="hidden content">
-							<i class="right arrow icon"></i>
-						</div>
-					</div>
-					</a>
-				</div>
-				</div>
-				<div class="ui row">
-					<div class="column">
-						<a href="https://unsuitable001.github.io/contact">
-						<div class="ui animated white big button mcol" id="contact">
-							<div class="visible content"> Contact </div>
-							<div class="hidden content">
-								<i class="right arrow icon"></i>
-							</div>
-						</div>
-						</a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="column">
-						<a href="https://twitter.com/unsuitable001" class="ui compact circular twitter button" alt="twitter"> 
-							<i class="twitter icon"></i>
-						</a>
-						<a href="https://github.com/unsuitable001" class="ui compact circular github button" alt="github"> 
-							<i class="github icon"></i>
-						</a>
-						<a href="https://gitter.im/unsuitable001" class="ui compact circular pink button" alt="gitter"> 
-							<i class="gitter icon"></i>
-						</a>
-						<a href="https://unsuitable001.github.io/sitemap.html" class="ui compact circular button" alt="sitemap"> 
-							<i class="sitemap icon"></i>
-						</a>
-					</div>
-				</div>
-				<div class="row"></div>
-			</div>
-		</div>
-		<div class="pusher" id="maindiv">
-			<div class="bgoverlay">
-			<div class="ui grid">
-				<!-- menu -->
-				<div class="ui row">
-					<div class="column">
-						<div class="ui invisible menu">
-							<div class="item">
-								<a class="item">dummy item</a>
-							</div>
-						</div>
-						<div class="ui top fixed secondary inverted pointing transparent menu" id="menu">
-							<div class="left item">
-									<a href="/index.html" class="item namehead" style="font-size: 1.5em;">unsuitable001</a>
-							</div>
-							<div class="right item" onclick="openMenu();">
-								<a class="item"><i class="large bars icon"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="ui three row stackable center aligned grid" id="intro">
-				<div class="row">
-					<div class="column">
-						<h1 class="namehead" style="font-size: 3.5em;font-size:8vmax;">unsuitable001</h1>
-					</div>
-				</div>
-				<div class="row">
-					<div class="column">
-						<a href="https://unsuitable001.github.io/project">
-						<div class="ui animated black inverted big button">
-							<div class="visible content"><i class="code icon"></i> Projects </div>
-							<div class="hidden content">
-								<i class="right arrow icon"></i>
-							</div>
-						</div>
-						</a>
-						<a href="https://unsuitable001.github.io/hire">
-						<div class="ui animated black inverted big button">
-							<div class="visible content"><i class="briefcase icon"></i> Hire Me! </div>
-							<div class="hidden content">
-								<i class="right arrow icon"></i>
-							</div>
-						</div>
-						</a>
-						<a href="https://unsuitable001.github.io/donate">
-						<div class="ui animated black inverted big button">
-							<div class="visible content"><i class="heart icon"></i> Donate </div>
-							<div class="hidden content">
-								<i class="right arrow icon"></i>
-							</div>
-						</div>
-						</a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="column">
-						<p class="namehead" id="itext" style="font-size: 2em"></p>
-					</div>
-				</div>
-			</div>
-			</div>
-			<!-- footer -->
-			<div class="ui bottom footer black inverted segment">
-				<div class="ui two column stackable center aligned grid">
-					<div class="middle aligned row">
-						<div class="column">
-							<div>&copy; Soumyadip Mondal (aka. unsuitable001). All Rights Reserved. <br>
-							</div>
-						</div>
-						<div class="column">
-							<a href="https://twitter.com/unsuitable001" class="ui inverted blue button" alt="twitter">
-								<i class="twitter icon"></i>
-							</a>
-							<a href="https://github.com/unsuitable001" class="ui black inverted button" alt="github">
-								<i class="github icon"></i>
-							</a>
-							<a href="https://gitter.im/unsuitable001" class="ui inverted pink button" alt="gitter">
-								<i class="gitter icon"></i>
-							</a>
-							<a href="https://unsuitable001.github.io/contact" class="ui inverted yellow button" alt="contact">
-								<i class="envelope icon"></i> Contact
-							</a>
-							<a href="https://unsuitable001.github.io/sitemap.html" class="ui basic black inverted button" alt="sitemap">
-								<i class="sitemap icon"></i> Sitemap
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<link rel="stylesheet" href="./css/semantic.min.css" type="text/css" />
-		<link defer href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
-		<link rel="stylesheet" href="./css/main.css" type="text/css" />
-		<script language="javascript" src="./js/main.js"></script>
-		<script language="javascript" src="./js/home.js"></script>
-    </body>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Soumyadip Mondal - Home</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="Home of unsuitable001">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1a202c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/1.styles.6e7ac091.css" as="style"><link rel="preload" href="/assets/js/app.3e2c53a4.js" as="script"><link rel="preload" href="/assets/js/2.797e84be.js" as="script"><link rel="preload" href="/assets/js/5.683261cc.js" as="script"><link rel="prefetch" href="/assets/js/3.98138e03.js"><link rel="prefetch" href="/assets/js/4.9e585f1a.js">
+    <link rel="stylesheet" href="/assets/css/1.styles.6e7ac091.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="global-layout" class="flex flex-col min-h-full"><nav class="w-full pt-8 px-6"><div class="max-w-6xl mx-auto flex sm:items-center justify-between"><a href="/" class="no-underline"><ul class="flex items-center"><img src="https://github.com/unsuitable001.png?size=40" class="rounded-full h-8 w-8 bg-gray-900 block"> <span class="px-2 font-bold text-grey-100">Soumyadip</span></ul></a> <ul class="block sm:hidden rounded-full h-8 w-8"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="fill-current hover:text-green-400"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 
+            10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg></ul> <ul class="sm:block flex-col my-3 sm:flex-row hidden"><a href="/" class="no-underline py-2 px-2 text-gray-300 hover:text-purple-400 sul-g-b cursor-pointer text-green-500">
+                    home
+            </a><a href="https://unsuitable001.medium.com" class="no-underline py-2 px-2 text-gray-300 hover:text-purple-400 sul-g-b cursor-pointer">
+                    blogs
+            </a><a href="https://www.youtube.com/channel/UCuNZt3eGVpmbuS6UB4xggoA/" class="no-underline py-2 px-2 text-gray-300 hover:text-purple-400 sul-g-b cursor-pointer">
+                    podcasts
+            </a><a href="https://docs.google.com/document/d/1A4wzLlYHKrB_dgTqVzdFH2rquqC1DwvRGKy_ZsiaBsQ/edit?usp=sharing" class="no-underline py-2 px-2 text-gray-300 hover:text-purple-400 sul-g-b cursor-pointer">
+                    resume
+            </a> <a class="sm:hidden rounded-full h-10 w-10 no-underline py-4 px-2 text-red-300 sul-g-b cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="fill-current hover:text-green-400"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></a></ul></div></nav> <div><div class="max-w-6xl mx-auto px-6 flex sm:justify-center flex-col sm:flex-row leading-normal mt-24 sm:mt-32 mb-16 sm:mb-24"><div class="flex flex-col flex-none sm:flex-1 items-center text-xl pb-6"><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px" class="object-contain md:object-scale-down h-24 w-24 pb-2"> <div><div class="container pb-8 my-6 content__intro"><p>Hi, I'm a full-stack developer, <span class="hlt"><a href="https://www.youtube.com/channel/UCuNZt3eGVpmbuS6UB4xggoA/" target="_blank" rel="noopener noreferrer">youtuber<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></span> and a Computer Engineering student. I've been recognized as a <span class="hlt"><a href="https://drive.google.com/file/d/0B5725d03UsYwenRQaV9CUkpYbTRQaEQ0eERSSmpNYjlGQmgw/view?usp=sharing" target="_blank" rel="noopener noreferrer">Google Code-In 2018 leader<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></span> by OpenWisp, and CodeChef Chapter lead. One of my projects was featured on <span class="hlt"><a href="https://thecodingtrain.com/CodingChallenges/120-bit-shifting.html" target="_blank" rel="noopener noreferrer">Coding Train<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></span>. Currently working on tutorial and podcast creation.</p></div> <div class="text-white font-semibold"><a href="https://docs.google.com/document/d/1A4wzLlYHKrB_dgTqVzdFH2rquqC1DwvRGKy_ZsiaBsQ/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><button class="transition duration-500 ease-in-out transform bg-blue-600 hover:bg-blue-700 py-3 my-2 px-6 border-2 border-blue-600 rounded-md">Get Resume</button></a> <a href="mailto:unsuitable001@gmail.com" target="_blank" rel="noopener noreferrer"><button class="transition duration-500 ease-in-out transform border-green-600 border-2 hover:bg-green-700 py-3 my-2 px-6 rounded-md">Contact</button></a></div></div></div> <div class="flex flex-col flex-none sm:flex-1 items-center pb-6"><img src="https://github.com/unsuitable001.png?size=400" class="rounded-lg shadow-2xl h-48 w-48 md:h-72 md:w-72"> <div class="flex mx-auto w-80 justify-evenly m-4 p-8"><a href="https://github.com/unsuitable001" target="_blank" rel="noopener noreferrer"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current text-white hover:text-gray-400 h-8 w-8 "><title>GitHub icon</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></a> <a href="https://www.youtube.com/channel/UCuNZt3eGVpmbuS6UB4xggoA/" target="_blank" rel="noopener noreferrer"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-current text-white hover:text-gray-400 h-8 w-8 "><title>YouTube icon</title><path d="M23.499 6.203a3.008 3.008 0 00-2.089-2.089c-1.87-.501-9.4-.501-9.4-.501s-7.509-.01-9.399.501a3.008 3.008 0 00-2.088 2.09A31.258 31.26 0 000 12.01a31.258 31.26 0 00.523 5.785 3.008 3.008 0 002.088 2.089c1.869.502 9.4.502 9.4.502s7.508 0 9.399-.502a3.008 3.008 0 002.089-2.09 31.258 31.26 0 00.5-5.784 31.258 31.26 0 00-.5-5.808zm-13.891 9.4V8.407l6.266 3.604z"></path></svg></a> <a href="https://twitter.com/unsuitable001" target="_blank" rel="noopener noreferrer"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-current text-white hover:text-gray-400 h-8 w-8 "><title>Twitter icon</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"></path></svg></a> <a href="https://unsuitable001.medium.com" target="_blank" rel="noopener noreferrer"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current text-white hover:text-gray-400 h-8 w-8 "><title>Medium icon</title><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"></path></svg></a> <a href="https://linkedin.com/in/unsuitable001" target="_blank" rel="noopener noreferrer"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current text-white hover:text-gray-400 h-8 w-8 "><title>LinkedIn icon</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg></a></div></div></div> <div class="w-screen mt-auto bg-blue-900 p-8"><p align="center" class="font-semibold text-2xl sm:text-3xl">some of my projects</p> <div class="flex flex-col sm:flex-row items-center justify-around pt-4 sm:pt-8"><a href="/bitviz" target="_blank" rel="noopener noreferrer" class="transition duration-300 ease-in-out transform hover:shadow-2xl
+         bg-gray-200 rounded-md cursor-pointer text-black my-4 w-80 sm:w-1/6"><div><header class="font-semibold pt-2 px-2">BitViz</header> <p class="px-2">A Bitwize Operation Visualizer</p> <div class="flex justify-between mt-2 p-1"><span class="text-gray-500">JS/HTML/CSS</span> <a href="https://github.com/unsuitable001/BitViz" target="_blank" rel="noopener noreferrer" class="text-black hover:text-gray-700"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="fill-current h-6 w-6 rounded-full"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="fill-current h-6 w-6 rounded-full hidden"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path></svg></div></div></a><a href="https://attnsheet.netlify.com" target="_blank" rel="noopener noreferrer" class="transition duration-300 ease-in-out transform hover:shadow-2xl
+         bg-gray-200 rounded-md cursor-pointer text-black my-4 w-80 sm:w-1/6"><div><header class="font-semibold pt-2 px-2">AttnSheet</header> <p class="px-2">Cloud synced attendance management system</p> <div class="flex justify-between mt-2 p-1"><span class="text-gray-500">Framework7 (JS)</span> <a href="https://github.com/unsuitable001/AttnSheet" target="_blank" rel="noopener noreferrer" class="text-black hover:text-gray-700"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="fill-current h-6 w-6 rounded-full"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="fill-current h-6 w-6 rounded-full hidden"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path></svg></div></div></a><a href="https://drive.google.com/file/d/1XCZmBAulqA2TUt-mdTdozmu8WkVD34P7/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="transition duration-300 ease-in-out transform hover:shadow-2xl
+         bg-gray-200 rounded-md cursor-pointer text-black my-4 w-80 sm:w-1/6"><div><header class="font-semibold pt-2 px-2">PaperPlane</header> <p class="px-2">Peer to peer communication app</p> <div class="flex justify-between mt-2 p-1"><span class="text-gray-500">Dart</span> <a target="_blank" rel="noopener noreferrer" class="text-black hover:text-gray-700 hidden"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="fill-current h-6 w-6 rounded-full"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="fill-current h-6 w-6 rounded-full"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path></svg></div></div></a><a href="https://shebang.co.in" target="_blank" rel="noopener noreferrer" class="transition duration-300 ease-in-out transform hover:shadow-2xl
+         bg-gray-200 rounded-md cursor-pointer text-black my-4 w-80 sm:w-1/6"><div><header class="font-semibold pt-2 px-2">SheBang</header> <p class="px-2">Coding contest judging system for SNU</p> <div class="flex justify-between mt-2 p-1"><span class="text-gray-500">JS/HTML/CSS</span> <a target="_blank" rel="noopener noreferrer" class="text-black hover:text-gray-700 hidden"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="fill-current h-6 w-6 rounded-full"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="fill-current h-6 w-6 rounded-full"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path></svg></div></div></a></div> <p align="center" class="mt-8 pt-10"><a href="https://github.com/unsuitable001?tab=repositories" target="_blank" rel="noopener noreferrer" class="font-thin text-xl sm:text-lg border-gray-100 transition duration-500 ease-in-out transform hover:bg-blue-600 py-3 my-2 px-6 border-2 rounded-md">and more</a></p></div> <div class="w-screen mt-auto p-10"><p align="center" class="font-semibold text-2xl sm:text-3xl">in my briefcase</p> <div class="flex my-10 flex-wrap justify-around"><img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" alt="visual-studio-code" class="h-10 w-10 mx-4 my-2"><img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" alt="html" class="h-10 w-10 mx-4 my-2"><img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" alt="css" class="h-10 w-10 mx-4 my-2"><img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/c/c.png" alt="c" class="h-10 w-10 mx-4 my-2"><img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/cpp/cpp.png" alt="cpp" class="h-10 w-10 mx-4 my-2"><img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" alt="javascript" class="h-10 w-10 mx-4 my-2"><img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" alt="python" class="h-10 w-10 mx-4 my-2"><img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" alt="react" class="h-10 w-10 mx-4 my-2"><img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png" alt="vue" class="h-10 w-10 mx-4 my-2"><img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/dart/dart.png" alt="dart" class="h-10 w-10 mx-4 my-2"><img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/flutter/flutter.png" alt="flutter" class="h-10 w-10 mx-4 my-2"><img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png" alt="firebase" class="h-10 w-10 mx-4 my-2"><img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/docker/docker.png" alt="docker" class="h-10 w-10 mx-4 my-2"><img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" alt="git" class="h-10 w-10 mx-4 my-2"><img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png" alt="terminal" class="h-10 w-10 mx-4 my-2"></div></div></div> <div class="p-4 pr-8 bg-gray-900 w-screen mt-auto flex flex-col sm:flex-row items-center justify-between"><span class="mx-2 flex-none sm:flex-1">Made by Soumyadip Mondal with ❤️</span> <div class="flex items-center flex-none sm:flex-1 justify-end"><a href="https://github.com/unsuitable001" target="_blank" rel="noopener noreferrer"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current text-white hover:text-gray-400 h-6 w-6 mx-2"><title>GitHub icon</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></a> <a href="https://www.youtube.com/channel/UCuNZt3eGVpmbuS6UB4xggoA/" target="_blank" rel="noopener noreferrer"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-current text-white hover:text-gray-400 h-6 w-6 mx-2"><title>YouTube icon</title><path d="M23.499 6.203a3.008 3.008 0 00-2.089-2.089c-1.87-.501-9.4-.501-9.4-.501s-7.509-.01-9.399.501a3.008 3.008 0 00-2.088 2.09A31.258 31.26 0 000 12.01a31.258 31.26 0 00.523 5.785 3.008 3.008 0 002.088 2.089c1.869.502 9.4.502 9.4.502s7.508 0 9.399-.502a3.008 3.008 0 002.089-2.09 31.258 31.26 0 00.5-5.784 31.258 31.26 0 00-.5-5.808zm-13.891 9.4V8.407l6.266 3.604z"></path></svg></a> <a href="https://twitter.com/unsuitable001" target="_blank" rel="noopener noreferrer"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-current text-white hover:text-gray-400 h-6 w-6 mx-2"><title>Twitter icon</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"></path></svg></a> <a href="https://unsuitable001.medium.com" target="_blank" rel="noopener noreferrer"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current text-white hover:text-gray-400 h-6 w-6 mx-2"><title>Medium icon</title><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"></path></svg></a> <a href="https://linkedin.com/in/unsuitable001" target="_blank" rel="noopener noreferrer"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current text-white hover:text-gray-400 h-6 w-6 mx-2"><title>LinkedIn icon</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg></a></div></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3e2c53a4.js" defer></script><script src="/assets/js/2.797e84be.js" defer></script><script src="/assets/js/5.683261cc.js" defer></script>
+  </body>
 </html>

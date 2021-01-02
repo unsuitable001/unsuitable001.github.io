@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-6xl mx-auto flex sm:justify-center flex-col sm:flex-row leading-normal mt-24 sm:mt-32 mb-16 sm:mb-24">
+    <div class="max-w-6xl mx-auto px-6 flex sm:justify-center flex-col sm:flex-row leading-normal mt-24 sm:mt-32 mb-16 sm:mb-24">
         <div class="flex flex-col flex-none sm:flex-1 items-center text-xl pb-6">
             <img class="object-contain md:object-scale-down h-24 w-24 pb-2" src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
             <div>
@@ -30,7 +30,7 @@ import SocialBox from '../SocialBox.vue';
 export default {
     name: 'IntroBox',
     components: {
-        SocialBox
+        SocialBox,
     }
 }
 </script>

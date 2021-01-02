@@ -1,5 +1,5 @@
 <template>
-    <nav class="w-full pt-8">
+    <nav class="w-full pt-8 px-6">
         <div v-bind:class="{'flex-col': isOpen}" class="max-w-6xl mx-auto flex sm:items-center justify-between">
             <a href='/' class="no-underline">
                 <ul class="flex items-center">

@@ -1,0 +1,21 @@
+{
+  "name": "unsuitable001",
+  "version": "1.0.0",
+  "description": "Home of unsuitable001",
+  "main": "index.js",
+  "repository": "https://github.com/unsuitable001/unsuitable001.github.io",
+  "author": "Soumyadip Mondal",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "autoprefixer": "9",
+    "postcss": "7",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "vuepress": "^1.7.1"
+  },
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build"
+  }
+}

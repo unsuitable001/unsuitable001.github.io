@@ -51,8 +51,12 @@ Hi, I'm a full-stack developer, <span class="hlt">[youtuber][youtube]</span> and
 
 :::
 
+::: slot channel
 
+In my YouTube channel, I post tutorial videos, podcast clips, general discussions and sharing knowledge about tech in general as a whole.
+Currently serving C Tutorial (Beginner) & The NoobCoder's Show (Podcast). Oh, did I mention that, the channel is primarily in Bengali(India)? Yes, I want to promote tech in my mother toungue.
 
+:::
 
 
 [youtube]: https://www.youtube.com/channel/UCuNZt3eGVpmbuS6UB4xggoA/

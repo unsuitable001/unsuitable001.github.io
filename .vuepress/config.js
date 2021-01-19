@@ -45,7 +45,7 @@ module.exports = {
       },
       {
         text: 'podcasts',
-        link: 'https://www.youtube.com/channel/UCuNZt3eGVpmbuS6UB4xggoA/'
+        link: 'https://anchor.fm/unsuitable001/'
       },
       {
         text: 'resume',

@@ -1,5 +1,10 @@
 module.exports = {
-  purge: [],
+  purge: [
+  './.vuepress/**/*.html',
+  './.vuepress/**/*.vue',
+  './.vuepress/**/*.js',
+  './.vuepress/**/*.styl',
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {

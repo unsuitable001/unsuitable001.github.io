@@ -10,7 +10,7 @@
   "devDependencies": {
     "@tailwindcss/postcss7-compat": "^2.0.2",
     "autoprefixer": "9",
-    "postcss": "7",
+    "postcss": "8",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "vuepress": "^1.7.1"
   },

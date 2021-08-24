@@ -1,0 +1,16 @@
+name: Gatsby Publish
+
+on:
+  push:
+    branches:
+      - v3
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: enriikke/gatsby-gh-pages-action@v2
+        with:
+          deploy-branch: 'gh-pages'
+          access-token: x-access-token:${{ secrets.GITHUB_TOKEN }}

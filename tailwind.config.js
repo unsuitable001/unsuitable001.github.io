@@ -1,19 +1,16 @@
 module.exports = {
-  purge: [
-  './.vuepress/**/*.html',
-  './.vuepress/**/*.vue',
-  './.vuepress/**/*.js',
-  './.vuepress/**/*.styl',
-  ],
-  darkMode: false, // or 'media' or 'class'
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+  },
+  purge: ['./src/**/*.js', './src/**/*.jsx', './src/**/*.ts', './src/**/*.tsx'],
   theme: {
     extend: {
+      screens: {
+        xs: '480px',
+      },
     },
   },
-  variants: {
-    extend: {
-      borderColor: ['hover'],
-    },
-  },
+  variants: {},
   plugins: [],
-}
+};

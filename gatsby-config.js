@@ -59,8 +59,8 @@ module.exports = {
       },
       {
         name: 'Your company, maybe?',
-        description: 'Help me fill this space with my honest work 😅',
-        link: '/Soumyadip_Mondal_Resume_Public.pdf',
+        description: 'Help me fill this space with my honest work ฅ^•ﻌ•^ฅ',
+        link: 'https://unsuitable001.github.io/Soumyadip_Mondal_Resume_Public.pdf',
       },
     ],
     // Optional: List your skills, they must have `name` and `description`.

@@ -1,6 +1,6 @@
 # Devfolio
 
-Created by RyanFitzgerald, adapted by unsuitable001.
+Created by [RyanFitzgerald](https://github.com/RyanFitzgerald/devfolio), adapted by [unsuitable001](https://unsuitable001.github.io).
 
 ## License
 

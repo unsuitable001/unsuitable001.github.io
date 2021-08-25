@@ -16,7 +16,8 @@ module.exports = {
     linkedin: `https://www.linkedin.com/in/unsuitable001/`,
     // Content of the About Me section
     about: `Hi 👋! I'm Soumyadip. I'm a Computer Science and Engineering undergrad. I love to develop solutions using my keyboard. Currently exploring the world of App Development and Backend Engineering. I do open-source and teach people in between. Slowly building up DS-Algo skills to help the humanity.
-    <br> p.s. I ♥️ Music.`,
+    
+    p.s. I ♥️ Music.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
@@ -55,6 +56,11 @@ module.exports = {
         name: 'Sister Nivedita University',
         description: 'Contest Platform Developer, May 2020',
         link: 'https://snuniv.ac.in',
+      },
+      {
+        name: 'Your company, maybe?',
+        description: 'Help me fill this space with my honest work 😅',
+        link: '/Soumyadip_Mondal_Resume_Public.pdf',
       },
     ],
     // Optional: List your skills, they must have `name` and `description`.

@@ -16,7 +16,7 @@ module.exports = {
     linkedin: `https://www.linkedin.com/in/unsuitable001/`,
     // Content of the About Me section
     about: `Hi 👋! I'm Soumyadip. I'm a Computer Science and Engineering undergrad. I love to develop solutions using my keyboard. Currently exploring the world of App Development and Backend Engineering. I do open-source and teach people in between. Slowly building up DS-Algo skills to help the humanity.
-    p.s. I ♥️ Music.`,
+    <br> p.s. I ♥️ Music.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {

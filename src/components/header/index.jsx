@@ -35,6 +35,14 @@ const Header = ({ metadata = {}, noBlog = false }) => {
         </h1>
         <p className={classes.description}>{metadata.description}</p>
         <ul className={classes.list}>
+          <li className={classes.item}>
+            <a
+              className={classes.link}
+              href={`/Soumyadip_Mondal_Resume_Public.pdf`}
+            >
+              Resume
+            </a>
+          </li>
           {twitter && (
             <li className={classes.item}>
               <a
@@ -66,6 +74,14 @@ const Header = ({ metadata = {}, noBlog = false }) => {
               </Link>
             </li>
           )}
+          <li className={classes.item}>
+            <a
+              className={classes.link}
+              href={`mailto:mandal.soumyadip9714@gmail.com`}
+            >
+              Contact
+            </a>
+          </li>
         </ul>
       </div>
     </div>

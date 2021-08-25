@@ -72,12 +72,17 @@ module.exports = {
       },
       {
         name: 'Databases',
-        description: 'MongoDB, OracleSQL, Firestore, Real-time Database (Firebase)',
+        description: 'OracleSQL, Firestore, Real-time Database (Firebase)',
       },
       {
         name: 'Other',
         description:
           'Docker, Firebase, CI / CD, Microservices, API design',
+      },
+      {
+        name: 'Currently Learning',
+        description:
+          'Django, MongoDB, PostgreSQL, refining DSA and many more.',
       },
     ],
   },

@@ -7,7 +7,7 @@ module.exports = {
     // Main Site Title
     title: `Soumyadip Mondal | App/Backend Developer`,
     // Description that goes under your name in main bio
-    description: `Google Summer of Code 2021 @ Dart (Google) | GDSC Lead | Learning AppDev & Backend.`,
+    description: `Google Summer of Code 2021 @ Dart (Google) | GDSC Lead | Learning AppDev & Backend | B. Tech CSE 2023.`,
     // Optional: Twitter account handle
     author: `@unsuitable001`,
     // Optional: Github account URL
@@ -16,7 +16,7 @@ module.exports = {
     linkedin: `https://www.linkedin.com/in/unsuitable001/`,
     // Content of the About Me section
     about: `Hi 👋! I'm Soumyadip. I'm a Computer Science and Engineering undergrad. I love to develop solutions using my keyboard. Currently exploring the world of App Development and Backend Engineering. I do open-source and teach people in between. Slowly building up DS-Algo skills to help the humanity.
-    
+
     p.s. I ♥️ Music.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
@@ -83,6 +83,20 @@ module.exports = {
         name: 'Currently Learning',
         description:
           'Django, MongoDB, PostgreSQL, refining DSA and many more.',
+      },
+    ],
+    // Optional: List your leaderships, they must have `name` and `description`. `link` is optional.
+    leaderships: [
+      {
+        name: 'Google Developer Student Clubs',
+        description:
+          'Founding Lead at Google Developer Student Clubs - Sister Nivedita University (2021 - Present)',
+        link: 'https://gdsc.community.dev/sister-nivedita-university/',
+      },
+      {
+        name: 'CodeChef SNU Chapter',
+        description: 'Founding Competitive Programming Lead (2020 - 2021)',
+        link: 'https://www.codechef.com/campus_chapter/SNU_Chapter',
       },
     ],
   },

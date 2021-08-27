@@ -85,7 +85,7 @@ module.exports = {
           'Django, MongoDB, PostgreSQL, refining DSA and many more.',
       },
     ],
-    // Optional: List your leaderships, they must have `name` and `description`. `link` is optional.
+    // Optional: List your leaderships, they must have `name`, `description` and `link`.
     leaderships: [
       {
         name: 'Google Developer Student Clubs',
@@ -97,6 +97,30 @@ module.exports = {
         name: 'CodeChef SNU Chapter',
         description: 'Founding Competitive Programming Lead (2020 - 2021)',
         link: 'https://www.codechef.com/campus_chapter/SNU_Chapter',
+      },
+    ],
+    // Optional: List your certifications, they must have `name`, `description` and `link`.
+    certifications: [
+      {
+        name: 'Google Code-In 2018',
+        description:
+          'Open Source Contribution to OpenWISP',
+        link: 'https://drive.google.com/file/d/0B5725d03UsYwenRQaV9CUkpYbTRQaEQ0eERSSmpNYjlGQmgw/view?usp=drivesdk',
+      },
+      {
+        name: 'Machine Learning',
+        description: 'Stanford Online',
+        link: 'https://www.coursera.org/account/accomplishments/records/TNKEBXSYH6UQ',
+      },
+      {
+        name: 'Introduction to Probability and Data with R',
+        description: 'Duke University',
+        link: 'https://www.coursera.org/account/accomplishments/records/5ZEV88K92MAJ',
+      },
+      {
+        name: 'Mathematics for Machine Learning Specialization',
+        description: 'Imperial College London',
+        link: 'http://coursera.org/verify/specialization/GG9A8TW3YQVC',
       },
     ],
   },

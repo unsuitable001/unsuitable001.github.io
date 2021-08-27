@@ -5,6 +5,7 @@ import Header from '../components/header';
 import Layout from '../components/layout';
 import SectionAbout from '../components/section-about';
 import SectionBlog from '../components/section-blog';
+import SectionCertifications from '../components/section-certifications';
 import SectionExperience from '../components/section-experience';
 import SectionLeaderships from '../components/section-leaderships';
 import SectionProjects from '../components/section-projects';
@@ -20,6 +21,7 @@ const Index = ({ data }) => {
   const skills = get(data, 'site.siteMetadata.skills', false);
   const noBlog = !posts || !posts.length;
   const leaderships = get(data, 'site.siteMetadata.leaderships', false);
+  const certifications = get(data, 'site.siteMetadata.certifications', false);
 
   return (
     <Layout>
@@ -35,6 +37,9 @@ const Index = ({ data }) => {
       {skills && skills.length && <SectionSkills skills={skills} />}
       {leaderships && leaderships.length && (
         <SectionLeaderships leaderships={leaderships} />
+      )}
+      {certifications && certifications.length && (
+        <SectionCertifications certifications={certifications} />
       )}
     </Layout>
   );
@@ -68,6 +73,11 @@ export const pageQuery = graphql`
           description
         }
         leaderships {
+          name
+          description
+          link
+        }
+        certifications {
           name
           description
           link

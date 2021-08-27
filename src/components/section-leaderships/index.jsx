@@ -3,8 +3,8 @@ import Section from '../section';
 import SummaryItem from '../summary-item';
 
 
-const SectionLeaderships = ({ experience }) => {
-  if (!experience.length) return null;
+const SectionLeaderships = ({ leaderships }) => {
+  if (!leaderships.length) return null;
 
   return (
     <Section title="Leaderships">

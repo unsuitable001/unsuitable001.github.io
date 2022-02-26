@@ -48,14 +48,19 @@ module.exports = {
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
+        name: 'Atlan',
+        description: 'Software Developer Intern, January 2022 - Present',
+        link: 'https://atlan.com',
+      },
+      {
+        name: 'Betterdata',
+        description: 'Software Developer Intern, October 2021 - January 2022',
+        link: 'https://betterdata.ai',
+      },
+      {
         name: 'Dart Team (Google)',
         description: 'Student Developer (Google Summer of Code), May 2021 - August 2021',
         link: 'https://summerofcode.withgoogle.com/projects/#4757095741652992',
-      },
-      {
-        name: 'Sister Nivedita University',
-        description: 'Contest Platform Developer, May 2020',
-        link: 'https://snuniv.ac.in',
       },
       {
         name: 'Your company, maybe?',
